@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on erelbi</title>
+    <link>https://erelbi.github.io/tags/blockchain/</link>
+    <description>Recent content in Blockchain on erelbi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© erelbi 2022</copyright>
+    <lastBuildDate>Sun, 16 May 2021 22:00:12 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain Teknolojisi Ve Savunma Alanında Kullanımı</title>
+      <link>https://erelbi.github.io/posts/blockchain-teknolojisi-ve-savunma-alan%C4%B1nda-kullan%C4%B1m%C4%B1/</link>
+      <pubDate>Sun, 16 May 2021 22:00:12 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/posts/blockchain-teknolojisi-ve-savunma-alan%C4%B1nda-kullan%C4%B1m%C4%B1/</guid>
+      <description>1. Giriş Blockchain, savunma endüstrilerindeki çeşitli alanlarda merkezi olmayan, veri güvenliği ve bütünlüğü, izlenebilirlik, şeffaflık, görünürlük ve denetlene bilirlik sağlamak için muazzam bir potansiyele sahip olabilecek, gelecek vaat eden ve gelişen bir teknolojidir. Blockchain teknolojisinin savunma alanında ilk kullanılabileceği yerlerin başında gizli ve kritik bilgilerin depolanması ve korunması gelmektedir. Askeri alanda haberleşme sistemlerinde bilgi aktarımının blockchain üzerinden yapılması ile haberleşme sistemine sızılarak verilerin ele geçirilmesi veya aldatma amaçlı mesajların gönderilmesinin önüne geçilmesi mümkün olabilecektir.</description>
+    </item>
+    
+  </channel>
+</rss>

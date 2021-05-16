@@ -9,6 +9,27 @@
     <copyright>© erelbi 2022</copyright>
     <lastBuildDate>Sun, 16 May 2021 15:56:22 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Blockchain Teknolojisi Ve Savunma Alanında Kullanımı</title>
+      <link>https://erelbi.github.io/posts/blockchain-teknolojisi-ve-savunma-alan%C4%B1nda-kullan%C4%B1m%C4%B1/</link>
+      <pubDate>Sun, 16 May 2021 22:00:12 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/posts/blockchain-teknolojisi-ve-savunma-alan%C4%B1nda-kullan%C4%B1m%C4%B1/</guid>
+      <description>1. Giriş Blockchain, savunma endüstrilerindeki çeşitli alanlarda merkezi olmayan, veri güvenliği ve bütünlüğü, izlenebilirlik, şeffaflık, görünürlük ve denetlene bilirlik sağlamak için muazzam bir potansiyele sahip olabilecek, gelecek vaat eden ve gelişen bir teknolojidir. Blockchain teknolojisinin savunma alanında ilk kullanılabileceği yerlerin başında gizli ve kritik bilgilerin depolanması ve korunması gelmektedir. Askeri alanda haberleşme sistemlerinde bilgi aktarımının blockchain üzerinden yapılması ile haberleşme sistemine sızılarak verilerin ele geçirilmesi veya aldatma amaçlı mesajların gönderilmesinin önüne geçilmesi mümkün olabilecektir.</description>
+    </item>
+    
+    <item>
+      <title>Etkin Radar Kullanımı</title>
+      <link>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</link>
+      <pubDate>Sun, 16 May 2021 21:45:54 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</guid>
+      <description>Radar ve Gemiler Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.
+Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.
+Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz. Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .
+1. RANGE SCALE : Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir.</description>
+    </item>
+    
+    <item>
       <title>AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</title>
       <link>https://erelbi.github.io/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</link>
       <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>

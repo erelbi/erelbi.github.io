@@ -7,22 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© erelbi 2022</copyright>
-    <lastBuildDate>Sun, 16 May 2021 15:57:06 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 22:00:12 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AIS</title>
-      <link>https://erelbi.github.io/tags/ais/</link>
-      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      <title>Blockchain</title>
+      <link>https://erelbi.github.io/tags/blockchain/</link>
+      <pubDate>Sun, 16 May 2021 22:00:12 +0300</pubDate>
       
-      <guid>https://erelbi.github.io/tags/ais/</guid>
+      <guid>https://erelbi.github.io/tags/blockchain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Denizcilik</title>
       <link>https://erelbi.github.io/tags/denizcilik/</link>
-      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      <pubDate>Sun, 16 May 2021 21:45:54 +0300</pubDate>
       
       <guid>https://erelbi.github.io/tags/denizcilik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radar</title>
+      <link>https://erelbi.github.io/tags/radar/</link>
+      <pubDate>Sun, 16 May 2021 21:45:54 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/tags/radar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AIS</title>
+      <link>https://erelbi.github.io/tags/ais/</link>
+      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/tags/ais/</guid>
       <description></description>
     </item>
     

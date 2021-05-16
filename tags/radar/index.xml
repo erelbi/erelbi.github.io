@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Radar on erelbi</title>
+    <link>https://erelbi.github.io/tags/radar/</link>
+    <description>Recent content in Radar on erelbi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© erelbi 2022</copyright>
+    <lastBuildDate>Sun, 16 May 2021 21:45:54 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/radar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Etkin Radar Kullanımı</title>
+      <link>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</link>
+      <pubDate>Sun, 16 May 2021 21:45:54 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</guid>
+      <description>Radar ve Gemiler Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.
+Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.
+Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz. Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .
+1. RANGE SCALE : Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir.</description>
+    </item>
+    
+  </channel>
+</rss>

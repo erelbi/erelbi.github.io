@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© erelbi 2022</copyright>
-    <lastBuildDate>Sun, 16 May 2021 15:57:06 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/denizcilik/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 21:45:54 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/denizcilik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Etkin Radar Kullanımı</title>
+      <link>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</link>
+      <pubDate>Sun, 16 May 2021 21:45:54 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/</guid>
+      <description>Radar ve Gemiler Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.
+Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.
+Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz. Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .
+1. RANGE SCALE : Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir.</description>
+    </item>
+    
     <item>
       <title>AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</title>
       <link>https://erelbi.github.io/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</link>

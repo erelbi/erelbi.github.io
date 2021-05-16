@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    
+    <link rel="canonical" href="https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/">
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.80.0" />
+
+    
+    
+    
+
+<title>Etkin Radar Kullanımı • erelbi</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Etkin Radar Kullanımı"/>
+<meta name="twitter:description" content="Radar ve Gemiler Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.
+Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.
+Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz. Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .
+1. RANGE SCALE : Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir."/>
+
+<meta property="og:title" content="Etkin Radar Kullanımı" />
+<meta property="og:description" content="Radar ve Gemiler Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.
+Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.
+Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz. Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .
+1. RANGE SCALE : Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://erelbi.github.io/posts/etkin-radar-kullan%C4%B1m%C4%B1/" />
+<meta property="article:published_time" content="2021-05-16T21:45:54+03:00" />
+<meta property="article:modified_time" content="2021-05-16T21:45:54+03:00" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://erelbi.github.io/scss/hyde-hyde.ac4380ee361702b17c210ce9b85a4d2bf0fd3f0333c9b538ea2a2918f6418081.css" integrity="sha256-rEOA7jYXArF8IQzpuFpNK/D9PwMzybU46iopGPZBgIE=">
+
+
+<link rel="stylesheet" href="https://erelbi.github.io/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://erelbi.github.io/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://erelbi.github.io/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://erelbi.github.io/">
+        
+          erelbi
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://erelbi.github.io/images/profile.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+         linux system administrator 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">erelbi</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="https://erelbi.github.io/post"><br />
+						<span>Blog</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://erelbi.github.io/"><br />
+						<span>Home</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://erelbi.github.io/about"><br />
+						<span>About</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://erelbi.github.io/contact"><br />
+						<span>Contact</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	<a href="https://github.com/erelbi" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/erelbi" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	<a href="https://medium.com/@bilselergun" rel="me"><i class="fab fa-medium fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Etkin Radar Kullanımı</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 16, 2021
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="https://erelbi.github.io/tags/denizcilik">denizcilik</a>
+           
+      
+          <a class="badge badge-tag" href="https://erelbi.github.io/tags/radar">radar</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 7 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <h1 id="radar-ve-gemiler">Radar ve Gemiler</h1>
+<p>Radar gemilerde en çok kullanılan ekipman sistemlerinden biridir. Hedefleri belirgin bir mesafeye tespit etmek ve izlemek için tasarlanmıştır.</p>
+<p>Güvenilir yorumlama için, radar işletim kontrollerinin uygun şekilde ayarlanması esastır.</p>
+<p>Bu yazıda, bir radar ekranı görüntüsünü nasıl yorumlayacağımızı ve anlayacağımızı tartışmak istiyoruz.  Bu makale deniz radarı kullanımına temel yaklaşımın anlaşılmasına yardımcı olacaktır .</p>
+<h2 id="1--range-scale-">1.  RANGE SCALE :</h2>
+<p>Geminin bulunduğu ortamın şartlarına ve koşullarına bağlı olarak uygun menzil ölçekleri kullanılmalıdır. İki radarın kullanıldığı yerlerde, bir radar daha uzun menzil ölçeğinde tutulabilir. Diğer gemilerin yaklaşımı, trafik yoğunluğundaki değişiklikler veya sahil şeridine yakınlığı vs. Diğer radar, daha küçük hedeflerin kolayca tespit edilmesine yardımcı olan kısa mesafeli bir ölçek kullanabilir. İstediğiniz aralığı seçmek için klavyedeki RANGE tuşunu kullanın. ‘+’ Tuşu menzili arttırırken, ‘-‘ tuşu menzili azaltır.</p>
+<hr>
+<p><img src="https://erelbi.github.io/images/radar/radar1.png" alt=""></p>
+<hr>
+<h2 id="2-range-measurement-">2. RANGE MEASUREMENT :</h2>
+<p>Hedefe yönelik aralık ölçümü, sabit aralık halkaları veya Variable Range Marker (VRM) ile yapılabilir. Sabit menzil halkaları, kullanılan menzil ölçeğine bağlı olarak önceden belirlenmiş bir aralık ile ekranda belirir ve menzili hedef için kabaca bir tahmin sağlar. Geçerli aralık, ekranda üst konumda gösterilir. Hedefe olan mesafeyi ölçmek için ekranın merkezi ile hedef arasındaki halka sayısını sayın. Değişken Menzil İşaretleyicisinin çapı arttırılabilir veya azaltılabilir, böylece işaretçi hedefin ekosunun iç kenarına dokunur, böylece daha doğru aralık ölçümleri elde edilir. Kullanılabilir iki VRM seti vardır ve kesikli halkalar olarak görünürler. VRM’lerden birini görüntülemek için VRM OPEN tuşuna basın.</p>
+<hr>
+<p><img src="https://erelbi.github.io/images/radar/radar2.png" alt=""></p>
+<hr>
+<h2 id="3-bearing-measurement-">3. BEARING MEASUREMENT :</h2>
+<p>Elektronik Bearing Çizgiler, hedeflerin yönlendirilmesinde kullanılır. EBL, kendi gemi pozisyonundan radar ekranının çevresine kadar uzanır. Düşme menzili ile Bearing sabit kalırsa, çatışma riski vardır.</p>
+<h2 id="4-gain-">4. GAIN :</h2>
+<p>Klavyedeki kazanç kontrolü, radarın hassasiyetini ayarlamak için kullanılır. Arka plan gürültüsünün sadece ekranda görüneceği şekilde ayarlanması gerekir. Basit bir deyişle, eğer kazanç çok düşük ayarlanmışsa, aşırı duyarlılık çok fazla arka plan gürültüsü verirken zayıf yankılar görünmeyebilir. Aynı Bearing de ki iki hedeften yankılar, Plan position indicator veya radar ekranında tek bir nokta olarak görünebilir. Bu durumda, kazanç ayarında bir azalma gereklidir.</p>
+<h2 id="5-reducing-sea-clutter--rain-">5. REDUCING SEA CLUTTER / RAIN :</h2>
+<p>Yağmur veya deniz izleri çok düşük bir değere ayarlanırsa, izler hedefleri gizleyebilir, eğer çok yüksek ayarlanmış ise radar ekranından hedeflerin kaybolmasına neden olabilir. Radar ayrıca yağmur, kar veya dolu izlerini normal hedeflerle aynı şekilde algılayabilir. A/C RAIN ve A/C SEA kontrolü sırasıyla yağmur ve deniz izlerini ayarlamak için kullanılır. izleri artırmak veya azaltmak için konsolu saat yönünde veya saat yönünün tersine döndürülür.</p>
+<h2 id="6-of-centre-display-">6. OF CENTRE DISPLAY :</h2>
+<p>İlerinizi görebilmek kadar arkanızdan yetişen bir gemiyi fark etmekte büyük öneme sahiptir. Bununla birlikte, geminin kıçında veya kendi gemisini geçmeye çalışan gemilerdeki hedefleri görebilmek için geminin kıçında en az bir mil görüntüleme mesafesinin tutulmasına özen gösterilmelidir. İmleç, geminin konumunu taşımak istediğiniz pozisyona getirilebilir ve ardından klavyedeki OFF CENTRE tuşuna basın.</p>
+<h2 id="7-target-trails-">7. TARGET TRAILS :</h2>
+<p>İzlenen bir teknenin, durumu erken değerlendirmek için radar gözlemcisine çok yardımcı olabilir. Bu izler kesin bilgiler vermemekle birlikte. Göreceli iz mevcut teknemizin ve hedef arasındaki göreceli hareketi gösterir. Gerçek vektörlerle birleştirildiğinde göreceli izler, diğer gemilerin göreceli hareketlerinin ve sundukları risklerin bir göstergesidir. İz süresi, ihtiyaca göre ayarlanabilir.</p>
+<h2 id="8-pi-parallel-index-lines-">8. PI (PARALLEL INDEX) LINES :</h2>
+<p>Bu, çapraz izlerin eğilimini izlemek için kullanışlı bir yöntemdir. Geminin belirli bir rotada sabit bir nesneyi geçeceği mesafeyi değerlendirmemize yardımcı olur. Dizin çizgisi planlanan zemin izine paralel olarak çizilir ve sabit bir nesnenin radar ekosunun kenarına istenen geçiş mesafesine eşit bir aralıkta dokunması gerekir.</p>
+<p>Hedef paralel çizgiden hareket ederken herhangi bir çapraz rota eğilimi (gelgit akışının, sürüklenmenin veya akımın neden olduğu gibi) belirginleşir. Bu teknik hem göreceli hem de gerçek hareketlerde kullanılabilir. PI satır numarası kutusunu seçmek için hareket topunu kullanın. Bir PI satır numarası seçin ve kapatmak veya açmak için sol düğmeye basın. PI çizgisinin yönünü ayarlamak için döndürün (000 ° T ila 359.9 ° T arasında).</p>
+<p>Değişken Göstergeler</p>
+<h2 id="9-headingspeedcourse-">9. HEADING/SPEED/COURSE: :</h2>
+<p>Radar ekranının sağ üst köşesinde, yerdeki rota, hız, seyir ve hız, kendi gemi konumu ve kaynak gösterilir. Hız bir günlükten (STW) veya GPS’den (SOG) veya elle girilebilir.</p>
+<p>Yere göre hız (SOG), dünyanın yüzeyine atıfta bulunan teknenin hızıdır. Suya göre hız (STW) akıntı pozitif veya negatif etkilerinin etkilemediği birimdir. Geminizin üzerinde 8 knot yol var iken akıntı pozitif yönlü olarak 2 knot süratinize etki ediyor ise sizin yere göre hızın 8 knot suya göre hızınız 6 knot dır .Genel olarak, STW, hedefin yönünün daha doğru bir gösterim sağlar iken, çatışmadan kaçınmak SOG için kullanılır. Hız kaynağını seçmek için hız kutusuna sağ tıklayın.</p>
+<hr>
+<p><img src="https://erelbi.github.io/images/radar/radar3.png" alt=""></p>
+<hr>
+<h2 id="10-brilliance">10. BRILLIANCE:</h2>
+<p>Ekranın genel parlaklığı, saat yönünde veya saat yönünün tersine döndürülerek BRILL KEY kullanılarak aydınlatma koşullarına göre ayarlanabilir. Gece ve gündüz modları yeterli olacaktır.</p>
+<h2 id="11--watch-alarm-">11.  WATCH ALARM :</h2>
+<p>Saat alarmının işlevi BNWAS’ınkine oldukça benzer. Saat alarmı, radar resminin düzenli olarak izlenmesine yardımcı olmak için, seçilen zaman aralıklarında sesli alarmı çalar. Geri sayım ayarlanan değerden başlar. Zabitlerin çoğu zaman evraklar için zaman harcaması gerekir, bu nedenle bazen bir radar saati tutmayı unuturlar. Bu nedenle, saat alarmı, gmdss odası veya harita odası içerisinde uzun süre meşgul olmamak için kullanılabilir.  Alarmı susturmak için ALARM ACK tuşuna basılmalıdır.</p>
+<h3 id="121-vector-mode-">12.1. VECTOR MODE :</h3>
+<p>Hedef vektörler, kendi gemilerinin rotalarına (RELATIVE) veya North’a (TRUE) göre ayarlanabilir. Yakın geçiş durumu veya çatışma riskini belirlerken, bağıl vektörlerin kullanılması tercih edilir. Seyir durumunun daha iyi anlaşılması için gerçek ve bağıl vektörler arasında geçiş yapmak iyi bir uygulamadır. Gerçek bir vektör kullanırken, kendi gemisi ve diğer gemi gerçek hız ve rotalarında hareket eder. Gerçek vektörler hareketli ve durağan hedefleri ayırt edebilir.</p>
+<p>Bağıl vektör, bir çarpışma rotasında gemilerin bulunmasına yardımcı olur. Vektörü kendi gemisinin konumundan geçen bir gemi bir çatışma rotasındadır. Vektör Uzunluğu istenen zaman dilimine ayarlanabilir. Hem göreceli hem de gerçek bilgilerin aynı anda görünür olması faydalıdır; bu, gerçek izlerle göreceli vektörler seçilerek elde edilebilir.</p>
+<p>Gerçek vektörleri gerçek izlerle birleştirmek, diğer gemilerin göreceli hareketlerini ve sundukları riskleri göstermez. İmleci vektör modu kutusuna getirin ve gereken vektörü seçmek için sol tıklayın. Vektör süresi, sol düğme kullanılarak da seçilebilir.</p>
+<h3 id="122--past-position-">12.2.  PAST POSITION :</h3>
+<p>Bu noktaları önceden belirlenmiş bir sabit aralıkta yerleştirilir. Düz bir çizgideki eşit aralıktaki noktalar, sabit bir seyir ve hedeflerin hızını gösterir. Boşluk dengesiz hale geldiğinde herhangi bir değişiklik not edilebilir. Elbette değişim düz bir çizgi gösterilmez. İzdeki bir eğri bir değişikliğe işaret ederken, parsellerin aralığındaki değişiklik hedefin hızındaki bir değişikliği gösterir.</p>
+<p>Geçmiş veriler aynı zamanda vardiya zabitinin, belirli bir hedefin yakın geçmişte manevra yapıp yapmadığını kontrol etmesine yardımcı olabilir, muhtemelen vardiya zabiti diğer köprü üstü görevleriyle ilgileniyor ise ekranı iyi yorumlayamaz ve farklı hedeflerin grafikleri birbirini geçmeye ve üst üste gelmeye başladığından ve dikkatli kullanılmaları gerektiğinden yoğun trafikte kaçınılmalıdır.</p>
+<h2 id="13-mark">13. MARK:</h2>
+<p>MARK menüsü, memurun belirgin bir hedefi veya belirli bir ilgi noktasını işaretlemesini sağlar. Örneğin, ekranın sol tarafındaki işaret kutusundan istediğiniz işareti seçmek için hareket topunu kullanabilirsiniz. Ayrıca, VTS tarafından sağlanan Bağlantı Noktası koordinatlarını İşaret menüsündeki bağlantı noktalarına girerek bağlantı işaretini bırakabilirsiniz. İşaret menüsünü açmak için sağ tıklayın ve koordinatları girmek için L / L düğmesini kullanın.</p>
+<h1 id="yardımcı-ekipmanlar">Yardımcı Ekipmanlar</h1>
+<h2 id="14-target-tracking-ais-data-box">14. TARGET TRACKING/ AIS DATA BOX:</h2>
+<p>radar ekranının sağ tarafında görünür. Menzil, seyir, hız, CPA ve TCPA, BCR ve BCT dahil olmak üzere otomatik veya manuel olarak elde edilen hedefler hakkında bilgi sağlar. Hedef listesi, izlenen tüm hedeflerin kapsamlı bir veri gösterimini sağlar. Radar ekranında bir hedef elde etmek için imleci hedefe hareket ettirin ve sol tıklayın. Hedefi elde etmek için klavyedeki HEDEF HAZIR tuşu da kullanılabilir. CPA limit kutusu, CPA’nın aralığını ve süresini gerektiği gibi ayarlamak için kullanılabilir. Bir hedefin EBM limitlerini ihlal etmesi bekleniyorsa, alarm çalacak ve / veya gösterilecektir.</p>
+<h2 id="15-presentation-modes">15. PRESENTATION MODES:</h2>
+<p>Radar kullanıcıları gördüklerini açıkça anlamalıdır. North Up göreli hareket normal varsayılan radar görüntüleme formatıdır. Bu göreceli ve doğru vektör ve izler içinde seçilebilirNorth Up modu, Kuzey ekranda tutulan hedefleri kendi gemisinden gerçek (pusula) yönlerinde gösterir. Pruva, geminin yönüne göre yönünü değiştirir. TRUE hareketi kullanılıyorsa, kendi gemisi ve diğer hareketli hedefler rotalarına ve hızlarına göre hareket eder. Kara hedefleri gibi sabit hedefler sabit yankılar olarak görünür.</p>
+<hr>
+<p><img src="https://erelbi.github.io/images/radar/radar4.png" alt=""></p>
+<hr>
+<p>Radar ekranı, vardiya zabitleri için ,diğer hedeflerin kendi gemisine göre tasvir edildiği bir kuş bakışı görünümü sağlar. Bu nedenle, tüm radar kullanıcılarının kullanımını anlamaları ve ekipman hakkında kapsamlı bir bilgiye sahip olmaları önemlidir.</p>
+<h4 id="not-bu-yazının-amacı-bilgileri-tazelemek-amaçlı-olup-size-doğru-bilgiyi-sunmaya-bilir-kullanılan-radarı-etkili-bir-biçimde-tanımak-için-radar-firmanızın-hazırladığı-kılavuzdan-yararlanın">NOT: Bu yazının amacı bilgileri tazelemek amaçlı olup size doğru bilgiyi sunmaya bilir. Kullanılan radarı etkili bir biçimde tanımak için radar firmanızın hazırladığı kılavuzdan yararlanın.</h4>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="https://erelbi.github.io/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</span>
+    </a>
+    
+    
+    <a href="https://erelbi.github.io/posts/blockchain-teknolojisi-ve-savunma-alan%C4%B1nda-kullan%C4%B1m%C4%B1/" class="navigation-next">
+      <span class="navigation-tittle">Blockchain Teknolojisi Ve Savunma Alanında Kullanımı</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>
