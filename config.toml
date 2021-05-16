@@ -3,12 +3,15 @@ languageCode = "tr-Tr"
 title = "erelbi page"
 theme = "anatole"
 publishDir = "docs"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
 title = "Ergün Elvan Bİlsel"
 author = "erelbi"
 description = "Linux Sistem Yöneticisi"
 profilePicture = "images/profile.jpg"
+
 
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
