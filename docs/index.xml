@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>erelbi page</title>
+    <link>http://example.org/</link>
+    <description>Recent content on erelbi page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-Tr</language>
+    <lastBuildDate>Sun, 16 May 2021 15:40:50 +0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</title>
+      <link>http://example.org/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</link>
+      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      
+      <guid>http://example.org/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</guid>
+      <description>AIS VERİLERİNİ VERİ MADENCİLİĞİ KULLANILARAK GEMİ TİPLERİNİN MANEVRA KABİLİYETLERİNE ETKİSİNİN ARAŞTIRILMASI ÖZETÇE Gemiler Uluslararası ticaretin önemli bir aracıdır. Ticaretin devamlılığı sağlanması için gemi trafiğinin denetlemesi ve kararlı hale getirilmesi gereklidir. Gelişen teknoloji ile gemi trafikleri radar ve ais ile kolayca izlenebilmektedir. Ancak izlenebili rlik çatışmaların önüne geçememektedir. Bu yüzden gemi manevralarının izlenmesi ve gemi tiplerine göre analiz edilmesi gemi trafiğinin daha akılcı yönetilmesine olanak sağlayacağı görüşü benimsenmektedir. Gemi manevralarını izlemek ve gemi tipleriyle arasındaki bağı kurabilmek için veri madenciliğinden yararlanılarak bir analiz çalışması yapılmıştır.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Sun, 16 May 2021 15:40:14 +0300</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Merhaba bu zamana kadar yapmış olduğum bir kaç çalışma;
+ https://github.com/erelbi/express-monitor https://github.com/erelbi/django_paramiko_webterminal https://github.com/erelbi/gazi_blockchain_proofofwork https://github.com/erelbi/A-Real-Time-Vehicle-Exhaust-Gas-Monitoring https://github.com/erelbi/mongodb_controlpanel  Linux hakkında okumaya ve öğrenmeye hevesli bir Deniz Ulaştırma İşletme Mezunu</description>
+    </item>
+    
+    <item>
+      <title>Linux Uuid</title>
+      <link>http://example.org/posts/linux-uuid/</link>
+      <pubDate>Sun, 16 May 2021 15:39:54 +0300</pubDate>
+      
+      <guid>http://example.org/posts/linux-uuid/</guid>
+      <description>Linux Üzerinde ID Benzersiz ID oluşturma çabaları Oluşturulacak olan kimlik bilgisinin referans noktasını oluşturacak methodlar Yazılımsal ve Donanımsal olmak üzere iki ana başlıkta incelenmiştir.
+Donanım Kimlikleri / sys / class / dmi / id / product_uuid: Kart üreticisi tarafından ayarlanan ve BIOS DMI bilgisinde kodlanan ana kart ürünü UUID. Bir anakartı ve sadece anakartı tanımlamak için kullanılabilir.
+Kullanıcı ana kartı değiştirdiğinde değişir. Ayrıca, çoğu zaman BIOS üreticisi içine sahte seri yazar.</description>
+    </item>
+    
+  </channel>
+</rss>

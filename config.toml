@@ -1,0 +1,47 @@
+baseURL = "http://erelbi.github.io/"
+languageCode = "tr-Tr"
+title = "erelbi page"
+theme = "anatole"
+publishDir = "docs"
+
+[params]
+title = "Ergün Elvan Bİlsel"
+author = "erelbi"
+description = "Linux Sistem Yöneticisi"
+profilePicture = "images/profile.jpg"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://linkedin.com/in/erelbi"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/erelbi"
+
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:bilselergun@gmail.com"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"

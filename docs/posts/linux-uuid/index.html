@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> erelbi | Linux Uuid </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Linux Sistem Yöneticisi">
+    
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/main.min.bc9c6feb1dc21ca10380089a3cf98f7f0c9229eea1c73bacf720f371960f4d4c.css"
+        integrity="sha256-vJxv6x3CHKEDgAiaPPmPfwySKe6hxzus9yDzcZYPTUw="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="/posts/linux-uuid/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Uuid"/>
+<meta name="twitter:description" content="Linux Üzerinde ID Benzersiz ID oluşturma çabaları Oluşturulacak olan kimlik bilgisinin referans noktasını oluşturacak methodlar Yazılımsal ve Donanımsal olmak üzere iki ana başlıkta incelenmiştir.
+Donanım Kimlikleri / sys / class / dmi / id / product_uuid: Kart üreticisi tarafından ayarlanan ve BIOS DMI bilgisinde kodlanan ana kart ürünü UUID. Bir anakartı ve sadece anakartı tanımlamak için kullanılabilir.
+Kullanıcı ana kartı değiştirdiğinde değişir. Ayrıca, çoğu zaman BIOS üreticisi içine sahte seri yazar."/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Ergün Elvan Bİlsel</a></h3>
+            <div class="description">
+                <p>Linux Sistem Yöneticisi</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://linkedin.com/in/erelbi" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/erelbi" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:bilselergun@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; erelbi  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Linux Uuid</h3>
+                
+            </div>
+
+            <h1 id="linux-üzerinde-id-benzersiz-id-oluşturma-çabaları">Linux Üzerinde ID Benzersiz ID oluşturma çabaları</h1>
+<p>Oluşturulacak olan kimlik bilgisinin  referans noktasını oluşturacak  methodlar Yazılımsal ve Donanımsal olmak üzere iki ana başlıkta incelenmiştir.</p>
+<h2 id="donanım-kimlikleri">Donanım Kimlikleri</h2>
+<p><em><strong>/ sys / class / dmi / id / product_uuid</strong></em>: Kart üreticisi tarafından ayarlanan ve BIOS DMI bilgisinde kodlanan ana kart ürünü UUID. Bir anakartı ve sadece anakartı tanımlamak için kullanılabilir.</p>
+<p>Kullanıcı ana kartı değiştirdiğinde değişir. Ayrıca, çoğu zaman BIOS üreticisi içine sahte seri yazar. Ayrıca,x86&rsquo;ya özgüdür. Ayrıcalıklı kullanıcılar için erişim yasaktır. Bu nedenle genel kullanımı azdır.</p>
+<p><em><strong>CPUID / EAX = 3 CPU seri numarası</strong></em>: CPU üreticisi tarafından ayarlanan ve CPU çipinde kodlanan bir CPU UUID. Bir CPU&rsquo;yu ve sadece bir CPU&rsquo;yu tanımlamak için kullanılabilir. Kullanıcı CPU yu değiştirdği vakit değişir . Ayrıca, modern CPU&rsquo;ların çoğu artık bu özelliği uygulamaz ve eski bilgisayarlar BIOS Kurulumu seçeneği ile kontrol edilebilen varsayılan olarak bu seçeneği devre dışı bırakma eğilimindedir. Ayrıca, x86&rsquo;ya özgüdür. Dolayısıyla bu da çok az kullanılır.</p>
+<p><em><strong>/ sys / class / net / * / address</strong></em>: Ağ bağdaştırıcısı üreticisi tarafından ayarlanan ve bazı ağ kartı EEPROM&rsquo;da kodlanan bir veya daha fazla ağ MAC adresi. Kullanıcı ağ kartını değiştirdiğinde değişir. Ağ kartları isteğe bağlı olduğundan ve bu kimlik garanti edilmezse ve birden fazla seçim yapabileceğinizde birden fazla kullanılabilirlik olabilir. Sanal makinelerde MAC adresleri rastgele olma eğilimindedir. Bu da çok az genel kullanımdır.</p>
+<p><em><strong>/ sys / bus / usb / device / * /</strong></em> :  USB aygıtında EEPROM olarak kodlanan çeşitli USB aygıtlarının seri numaraları. Çoğu cihazın seri numarası ayarlanmamıştır ve eğer varsa genellikle sahte olur. Kullanıcı USB donanımını değiştirir veya başka bir makineye takarsa, bu kimlikler diğer makinelerde değişebilir veya görünebilir. Bu yüzden de çok az faydası var. Birçoğu sabit diskler ve benzerleri gibi çeşitli cihazların ID_SERIAL udev özelliği aracılığıyla bulabileceğiniz çeşitli başka donanım kimlikleri de vardır. Hepsinin ortak noktası, evrensel olarak bulunmayan, genellikle sahte verilerle doldurulmuş ve sanallaştırılmış ortamlarda rasgele olan belirli (değiştirilebilir) donanıma bağlı olmalarıdır.</p>
+<p><em><strong>dmidecode -t 2 | grep -i vers  &amp;  dmidecode -t 2 | grep -i serial</strong></em> : Anakart üreticileri üretikleri anakartın  versiyon kontrolünü ve  yazılımsal desteğini takip etmek amacıyla  versiyon numarası ve seri numarası  ilave ederler. Fakat fason üretim yapan firmalar bu id leri sahte veya değer tanımlamadan  piyasaya sürdükleri için  bu konuda araştırmalar devam etmeketedir.</p>
+<h2 id="yazılım-kimlikleri">Yazılım kimlikleri</h2>
+<p><em><strong>/ proc / sys / kernel / random / boot_id</strong></em>: Her önyüklemede yeniden oluşturulan rastgele bir kimlik. Bu nedenle, yerel makinenin mevcut önyüklemesini tanımlamak için kullanılabilir. Evrensel olarak herhangi bir Linux çekirdeğinde kullanılabilir. Belirli bir önyükleme çekirdeğinde belirli bir önyükleme tanımlamanız gerekiyorsa iyi ve güvenli bir seçimdir. Ama kalıcı değildir adında da anlaşılabileceği gibi yer yeni boot da değişir.</p>
+<p><em><strong>gethostname (), / proc / sys / kernel / hostname</strong></em> :  Ağdaki bir makineyi tanımlamak için yönetici tarafından yapılandırılan rastgele olmayan bir kimlik. Genellikle bu ayarlanmaz veya localhost gibi bazı varsayılan değerlere ayarlanır ve hatta yerel ağda benzersiz değildir. Ayrıca,çalışma zamanı sırasında değişebilir, örneğin güncellenmiş DHCP bilgilerine göre değiştiği için. Bu nedenle, kullanıcıya sunum dışında herhangi bir şey için neredeyse tamamen yararsızdır.</p>
+<p><em><strong>ID_FS_UUID</strong></em> : udev ağacındaki belirli bir dosya sistemini tanımlayan bir kimlik. Bu dizilerin nasıl üretildiği her zaman açık değildir, ancak bu neredeyse tüm modern disk dosya sistemlerinde kullanılabilir. NFS bağlantıları veya sanal dosya sistemleri için kullanılamaz. Bununla birlikte, bu genellikle bir dosya sistemini tanımlamak için iyi biryoldur.Bununla birlikte, zayıf tanımlanmış id yapısı nedeniyle D-Bus makine kimliği genellikle tercihedilir.Biz senorya gereği disk değişimi veDisk UUID lerinin manipüle edileceğini varsayılarak bu yöntemden vazgeçtik.</p>
+<p><em><strong>Machine-id</strong></em>: machine-id dosyası,yükleme veya önyükleme sırasında ayarlanan yerel sistemin benzersiz makine kimliğini içerir. Makine kimliği, tek satırsonu sonlu, onaltılık, 32 karakterli, küçük harfli bir kimliktir. Onaltılık koddan çözüldüğünde, bu 16 bayt / 128 bit değerine karşılık gelir. Bu kimlik tamamen sıfır olamaz. Makine kimliği genellikle sistem kurulumu veya ilk önyükleme sırasındarastgele bir kaynaktan oluşturulurve sonraki tüm önyüklemeler için sabit kalır. İsteğe bağlı olarak, durum bilgisi olmayan sistemler için, gerektiğinde erken önyükleme sırasında çalışma zamanı sırasında oluşturulur. Makine kimliği, örneğin ağ önyüklemesi yapılırken, systemd.machine_id = çekirdek komut satırı parametresi ile veya &ndash;machine-id = seçeneğini sistemd&rsquo;ye geçirerek ayarlanabilir. Bu şekilde belirtilen bir kimlik daha yüksek önceliğe sahiptir ve / etc / machine-id içinde depolanan kimlik yerine kullanılacaktır.Makine kimliği yerel veya ağ yapılandırmasına bağlıolarak veya donanım değiştirildiğinde değişmez. Bu makine kimliği, D-Bus makine kimliğiyle aynı formata ve mantığa uyar. Bu kimlik ana bilgisayarı benzersiz bir şekilde tanımlar. Machine id sistem ilk kurulum yaparken oluşturulduğu  ve kolay manipüle edilebilir bi yapıda olduğu için uygun görülmemiştir.</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
+        integrity="sha256-g8sd1f6o1C2H0eYBoH&#43;qcwia0O&#43;cz&#43;Xa9gQSievMTkY="
+        crossorigin="anonymous"></script></body>
+
+</html>
