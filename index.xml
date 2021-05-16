@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ergün elvan bilsel</title>
+    <title>erelbi</title>
     <link>https://erelbi.github.io/</link>
-    <description>Recent content on ergün elvan bilsel</description>
+    <description>Recent content on erelbi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© erelbi 2022</copyright>
@@ -45,26 +45,6 @@
       <description>Linux Üzerinde ID Benzersiz ID oluşturma çabaları Oluşturulacak olan kimlik bilgisinin referans noktasını oluşturacak methodlar Yazılımsal ve Donanımsal olmak üzere iki ana başlıkta incelenmiştir.
 Donanım Kimlikleri / sys / class / dmi / id / product_uuid: Kart üreticisi tarafından ayarlanan ve BIOS DMI bilgisinde kodlanan ana kart ürünü UUID. Bir anakartı ve sadece anakartı tanımlamak için kullanılabilir.
 Kullanıcı ana kartı değiştirdiğinde değişir. Ayrıca, çoğu zaman BIOS üreticisi içine sahte seri yazar.</description>
-    </item>
-    
-    <item>
-      <title>sample</title>
-      <link>https://erelbi.github.io/post/test/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://erelbi.github.io/post/test/</guid>
-      <description>Hugo is the world&amp;rsquo;s fastest static website engine. It&amp;rsquo;s written in Go (aka Golang) and developed by bep, spf13 and friends.
- Below you will find some of the most common and helpful pages from our documentation.
- https://gohugo.io/documentation/</description>
-    </item>
-    
-    <item>
-      <title>test post</title>
-      <link>https://erelbi.github.io/post/test/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://erelbi.github.io/post/test/</guid>
-      <description>echo &amp;#34;hello world !!&amp;#34; </description>
     </item>
     
   </channel>
