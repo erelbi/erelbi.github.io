@@ -17,7 +17,6 @@
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
-    13. Suggestions
 
 */
 
@@ -98,63 +97,18 @@ button::-moz-focus-inner,
 input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
-
-
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
 
-/* Import the font files */
-@font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans'), local('OpenSans'), url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal; font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold; font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: local('Merriweather Light'), local('Merriweather-Light'), url('../fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
-  font-weight: light; font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url('../fonts/Merriweather/Merriweather-LightItalic.ttf') format('truetype');
-  font-weight: light; font-style: italic;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: local('Merriweather Bold'), local('Merriweather-Bold'), url('../fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
-  font-weight: bold; font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url('../fonts/Merriweather/Merriweather-BoldItalic.ttf') format('truetype');
-  font-weight: bold; font-style: italic;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url('../fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
-  font-weight: normal; font-style: normal;
-}
-
 /* Import the font file with the icons in it */
 @font-face {
   font-family: 'genericons';
-  src: url('../fonts/Genericons/Genericons.eot');
-  src: url('../fonts/Genericons/Genericons.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Genericons/Genericons.woff') format('woff'),
-       url('../fonts/Genericons/Genericons.ttf') format('truetype'),
-       url('../fonts/Genericons/Genericons.svg#entypo') format('svg');
+  src: url('../fonts/Genericons.eot');
+  src: url('../fonts/Genericons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Genericons.woff') format('woff'),
+       url('../fonts/Genericons.ttf') format('truetype'),
+       url('../fonts/Genericons.svg#entypo') format('svg');
   font-weight: normal; font-style: normal;
 }
 
@@ -172,20 +126,10 @@ table { border-collapse: collapse; border-spacing: 0; }
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* In order to have correct background when using the monokai pygments style*/
-.highlight pre {
-  background-color: inherit;
-  color: #f8f8f2;
-}
-
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 .icon-github:before {
     content: "\f200";
-}
-
-.icon-codepen:before {
-    content: "\f216";
 }
 
 .icon-hugo:before{
@@ -201,26 +145,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-twitter:before {
     content: "\f202";
 }
-.icon-flickr:before {
-    content: "\f211";
-}
-.icon-mail:before {
-    content: "\f410";
-}
 .icon-google-plus:before {
     content: "\f206";
 }
 .icon-facebook:before {
     content: "\f203";
-}
-.icon-instagram:before {
-    content: "\f215";
-}
-.icon-pinterest:before {
-    content: "\f210";
-}
-.icon-linkedin:before {
-    content: "\f208";
 }
 .icon-arrow-left:before {
     content: "\f431";
@@ -277,6 +206,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
+
     font-family: "Open Sans", sans-serif;
     text-rendering: geometricPrecision;
 }
@@ -372,9 +302,9 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
+    margin: 1.7em 1.7em 1.75em 0em;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: #4A4A4A 0.2em solid;
 }
 
 blockquote p {
@@ -541,7 +471,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Wraps the main content & footer */
 .site-wrapper {
-    position: relative;
+    /*position: relative;*/
     z-index: 10;
     min-height: 100%;
     background: #fff;
@@ -565,7 +495,7 @@ body.nav-opened .site-wrapper {
 
 /* Big cover image on the home page */
 .main-header {
-    position: relative;
+    /*position: relative;*/
     display: table;
     width: 100%;
     height: 100vh;
@@ -580,26 +510,10 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
-.main-header a.bloglogo {
-    text-decoration: none;
-}
-
-.main-header a.bloglogo .icon-linkedin,
-.main-header a.bloglogo .icon-codepen,
-.main-header a.bloglogo .icon-github,
-.main-header a.bloglogo .icon-twitter,
-.main-header a.bloglogo .icon-facebook,
-.main-header a.bloglogo .icon-instagram,
-.main-header a.bloglogo .icon-pinterest,
-.main-header a.bloglogo .icon-google-plus {
-    color: white;
-    font-size: 2em;
-}
-
 .main-nav {
     position: relative;
     padding: 35px 40px;
-    margin: 0 0 30px 0;
+    margin: 0 0 100px 0;
 }
 
 .main-nav a {
@@ -858,9 +772,12 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
-    width: auto;
+    height: 144px;
+    width: 144px;
+    opacity: 0.6;
+    /*
+    border: #bfc8cd 1px solid;
+    */
 }
 
 .menu-button {
@@ -1010,7 +927,7 @@ body.nav-opened .menu-button .word {
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
+just for the lolz and stylepoints. */
 .post:after {
     display: block;
     content: "";
@@ -1035,7 +952,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-excerpt p {
-    margin: 0;
+    margin: 1em 0 1em 0;
     font-size: 0.9em;
     line-height: 1.7em;
 }
@@ -1169,7 +1086,7 @@ body:not(.post-template) .post-title {
    text column to break out. */
 .post-content img {
     display: block;
-    max-width: 126%;
+    max-width: 100%;
     height: auto;
     padding: 0.6em 0;
     /* Centers an image by (1) pushing its left edge to the
@@ -1177,10 +1094,6 @@ body:not(.post-template) .post-title {
        in the opposite direction by half its own width.
        Works for images that are larger than their containers. */
     position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%); /* for Safari and iOS */
-    -ms-transform: translateX(-50%); /* for IE9 */
-    transform: translateX(-50%);
 }
 
 /* The author credit area after the post */
@@ -1242,7 +1155,7 @@ body:not(.post-template) .post-title {
     position: absolute;
     top: 6rem;
     right: 0;
-    width: 180px;
+    width: 140px;
 }
 
 .post-footer .share a {
@@ -1505,7 +1418,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
-    /*border-top: #EBF2F6 1px solid;*/
+    border-top: #EBF2F6 1px solid;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
@@ -1535,12 +1448,69 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+.btn-bootstrap-2 {
+    /* display: block; */
+    /* position: absolute; */
+    /* z-index: 100; */
+    /* bottom: 50%; */
+    /* left: 50%; */
+    /* margin-left: -16px; */
+    /* width: 34px; */
+    /* height: 34px; */
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /* font-size: 44px; */
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    /* -webkit-animation: bounce 4s 2s infinite; */
+    /* animation: bounce 4s 2s infinite; */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    /* height: 38px; */
+    /* padding: 0 15px; */
+    border: #bfc8cd 1px solid;
+    opacity: 1;
+    /* color: #9EABB3; */
+    /* text-align: center; */
+    /* font-size: 12px; */
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.39);
+    /* transition: all 0.5s ease; */
+}
+.btn-bootstrap-2:hover {
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    /* color: rgba(255,255,255,0.7); */
+}
 
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
+
+    /*section.post-excerpt {
+        padding: 20px;
+    }*/
+
+    header.post-header {
+        padding: 20px 20px 0 20px;
+    }
+    section.post-content {
+        padding: 20px;
+    }
+
+    footer.post-meta {
+        padding: 20px;
+    }
 
     blockquote {
         margin-left: 0;
@@ -1564,8 +1534,14 @@ body:not(.post-template) .post-title {
         padding: 10% 0;
     }
 
+    h2.post-title {
+        padding:20px 20px 0px 20px;
+    }
+
     .blog-logo img {
         padding: 4px 0;
+        height: 70px;
+        width: 70px;
     }
 
     .page-title {
@@ -1579,7 +1555,9 @@ body:not(.post-template) .post-title {
     }
 
     .post {
-        font-size: 0.95em
+        width:100%;
+        max-width:100%;
+        font-size: 0.95em;
     }
 
     body:not(.post-template) .post-title {
@@ -1653,6 +1631,11 @@ body:not(.post-template) .post-title {
         padding: 0;
     }
 
+    article.post.post {
+        background-color: #fff;
+        margin: 0;
+    }
+
 }
 
 
@@ -1661,6 +1644,12 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    article.post.post {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0;
+    }
 
     .main-header {
         margin-bottom: 15px;
@@ -1679,7 +1668,7 @@ body:not(.post-template) .post-title {
 
     .main-nav {
         padding: 5px;
-        margin-bottom: 2rem;
+        margin-bottom: 8em;
     }
 
     .blog-logo {
@@ -1687,7 +1676,8 @@ body:not(.post-template) .post-title {
     }
 
     .blog-logo img {
-        height: 30px;
+        height: 70px;
+        width: 70px;
     }
 
     .menu-button {
@@ -1745,8 +1735,10 @@ body:not(.post-template) .post-title {
     }
 
     .post {
+        width: 100%;
+        max-width: 100%;
         width: auto;
-        margin-top: 2rem;
+        margin-top: 8rem;
         margin-bottom: 2rem;
         margin-left: 16px;
         margin-right: 16px;
@@ -1800,6 +1792,7 @@ body:not(.post-template) .post-title {
     h2 {
         font-size: 2.4rem;
         letter-spacing: 0;
+        margin: 1em 0 1em 0;
     }
 
     h3 {
@@ -1835,7 +1828,7 @@ body:not(.post-template) .post-title {
         padding: 0;
         width: calc(100% + 32px); /* expand with to image + margins */
         min-width: 0;
-        max-width: 112%; /* fallback when calc doesn't work */
+        max-width: 100%; /* fallback when calc doesn't work */
     }
 
     .post-meta {
@@ -1975,167 +1968,71 @@ body:not(.post-template) .post-title {
     }
 }
 
-/* ==========================================================================
-   13. Suggestions - Further Reading Suggestions
-   ========================================================================== */
-.read-next {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    /*margin-top: 10rem;*/
-}
-
-.read-next-story {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 50%;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background: #222 no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
-}
-.read-next-story:hover:before {
-    background: rgba(0,0,0,0.8);
-    transition: all 0.2s ease;
-}
-.read-next-story:hover .post:before {
-    color: #222;
-    background: #fff;
-    transition: all 0.2s ease;
-}
-
-.read-next-story:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.7);
-    transition: all 0.5s ease;
-}
-
-.read-next-story .post {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    border-bottom: none;
-}
-
-.read-next-story .post:before {
-    content: "Read This Next";
-    padding: 4px 10px 5px;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
-    color: rgba(255,255,255,0.8);
-    border: rgba(255,255,255,0.5) 1px solid;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-}
-.read-next-story.prev .post:before {
-    content: "You Might Enjoy";
-}
-
-.read-next-story h2 {
-    margin-top: 1rem;
-    color: #fff;
-}
-
-.read-next-story p {
-    margin: 0;
-    color: rgba(255,255,255,0.8);
-}
-
-/* Special styles for posts with no cover images */
-.read-next-story.no-cover {
-    background: #f5f8fa;
-}
-
-.read-next-story.no-cover:before {
-    display: none;
-}
-
-.read-next-story.no-cover .post:before {
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(0,0,0,0.2);
-}
-
-.read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
-}
-
-.read-next-story.no-cover p {
-    color: rgba(0,0,0,0.5);
-}
-
-/* if there are two posts without covers, put a border between them */
-.read-next-story.no-cover + .read-next-story.no-cover {
-    border-left: rgba(0,0,100,0.04) 1px solid;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* Correctly position site-footer when next to the .read-next container */
-.read-next + .site-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-}
-
-@media only screen and (max-width: 900px) {
-  .read-next {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    /*margin-top: 4rem;*/
-    margin-top: 0;
-
-  }
-
-  .read-next p {
-    display: none;
-  }
-
-  .read-next-story.no-cover + .read-next-story.no-cover {
-    border-top: rgba(0,0,100,0.06) 1px solid;
-    border-left: none;
-  }
-}
-
-
-@media only screen and (max-width: 500px) {
-  .read-next {
-    margin-top: 0;
-    margin-bottom: -37px;
-  }
-
-  .read-next .post {
-    width: 100%;
-  }
-}
-
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  /*font: normal 75% Arial, Helvetica, sans-serif;*/
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2FA7DC;
+  background-image: url("../images/screen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+
