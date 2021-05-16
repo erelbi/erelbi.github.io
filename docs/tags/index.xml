@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on erelbi page</title>
-    <link>http://example.org/tags/</link>
+    <link>http://erelbi.github.io/tags/</link>
     <description>Recent content in Tags on erelbi page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-Tr</language>
-    <lastBuildDate>Sun, 16 May 2021 15:57:06 +0300</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 15:57:06 +0300</lastBuildDate><atom:link href="http://erelbi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AIS</title>
-      <link>http://example.org/tags/ais/</link>
+      <link>http://erelbi.github.io/tags/ais/</link>
       <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
       
-      <guid>http://example.org/tags/ais/</guid>
+      <guid>http://erelbi.github.io/tags/ais/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Denizcilik</title>
-      <link>http://example.org/tags/denizcilik/</link>
+      <link>http://erelbi.github.io/tags/denizcilik/</link>
       <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
       
-      <guid>http://example.org/tags/denizcilik/</guid>
+      <guid>http://erelbi.github.io/tags/denizcilik/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Veri Madenciliği</title>
-      <link>http://example.org/tags/veri-madencili%C4%9Fi/</link>
+      <link>http://erelbi.github.io/tags/veri-madencili%C4%9Fi/</link>
       <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
       
-      <guid>http://example.org/tags/veri-madencili%C4%9Fi/</guid>
+      <guid>http://erelbi.github.io/tags/veri-madencili%C4%9Fi/</guid>
       <description></description>
     </item>
     
