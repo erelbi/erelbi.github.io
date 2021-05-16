@@ -1,151 +1,11 @@
 <!DOCTYPE html>
-<html  dir="ltr" lang="en" data-theme=""><head>
-    <title> erelbi | AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ </title>
-
-    
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Linux Sistem Yöneticisi">
-    
-    
-    
-    
-    <link rel="stylesheet"
-        href="/css/main.min.bc9c6feb1dc21ca10380089a3cf98f7f0c9229eea1c73bacf720f371960f4d4c.css"
-        integrity="sha256-vJxv6x3CHKEDgAiaPPmPfwySKe6hxzus9yDzcZYPTUw="
-        crossorigin="anonymous"
-        type="text/css">
-    
-    
-    <link rel="stylesheet"
-        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
-        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
-        crossorigin="anonymous"
-        type="text/css">
-    
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
-    crossorigin="anonymous" />
-
-    
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <link rel="canonical" href="/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/">
-
-    
-    
-    
-    
-    <script type="text/javascript"
-            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
-            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
-            crossorigin="anonymous"></script>
-
-
-    
-        
-        
-        <script type="text/javascript"
-                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
-                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
-                crossorigin="anonymous"></script>
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ"/>
-<meta name="twitter:description" content="AIS VERİLERİNİ VERİ MADENCİLİĞİ KULLANILARAK GEMİ TİPLERİNİN MANEVRA KABİLİYETLERİNE ETKİSİNİN ARAŞTIRILMASI ÖZETÇE Gemiler Uluslararası ticaretin önemli bir aracıdır. Ticaretin devamlılığı sağlanması için gemi trafiğinin denetlemesi ve kararlı hale getirilmesi gereklidir. Gelişen teknoloji ile gemi trafikleri radar ve ais ile kolayca izlenebilmektedir. Ancak izlenebili rlik çatışmaların önüne geçememektedir. Bu yüzden gemi manevralarının izlenmesi ve gemi tiplerine göre analiz edilmesi gemi trafiğinin daha akılcı yönetilmesine olanak sağlayacağı görüşü benimsenmektedir. Gemi manevralarını izlemek ve gemi tipleriyle arasındaki bağı kurabilmek için veri madenciliğinden yararlanılarak bir analiz çalışması yapılmıştır."/>
-
-
-    
-
-</head>
-<body><div class="sidebar animated fadeInDown ">
-    <div class="logo-title">
-        <div class="title">
-            <img src="/images/profile.jpg" alt="profile picture">
-            <h3 title=""><a href="/">Ergün Elvan Bİlsel</a></h3>
-            <div class="description">
-                <p>Linux Sistem Yöneticisi</p>
-            </div>
-        </div>
-    </div>
-    <ul class="social-links">
-        
-            <li>
-                <a href="https://linkedin.com/in/erelbi" rel="me" aria-label="Linkedin">
-                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://github.com/erelbi" rel="me" aria-label="GitHub">
-                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="mailto:bilselergun@gmail.com" rel="me" aria-label="e-mail">
-                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-    </ul>
-    <div class="footer">
-        <div class="by_farbox">&copy; erelbi  2021 </div>
-    </div>
-</div>
-<div class="main">
-    <div class="page-top  animated fadeInDown ">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
-    <ul class="nav" id="navMenu">
-        
-        
-            
-            <li><a 
-                   href="/"
-                        
-                   title="">Home</a></li>
-        
-            
-            <li><a 
-                   href="/post/"
-                        
-                   title="">Posts</a></li>
-        
-            
-            <li><a 
-                   href="/about/"
-                        
-                   title="">About</a></li>
-        
-        
-        
-            <li class="theme-switch-item">
-                <a class="theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-    </ul>
-</div>
-
-    <div class="autopagerize_page_element">
-        <div class="content">
-    <div class="post  animated fadeInDown ">
-        <div class="post-content">
-            
-            <div class="post-title">
-                <h3>AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</h3>
-                
-            </div>
-
-            <h2 id="ais-verilerini-veri-madenciliği-kullanilarak-gemi-tiplerinin-manevra-kabiliyetlerine-etkisinin-araştirilmasi">AIS VERİLERİNİ VERİ MADENCİLİĞİ KULLANILARAK GEMİ TİPLERİNİN MANEVRA KABİLİYETLERİNE ETKİSİNİN ARAŞTIRILMASI</h2>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ&nbsp;&ndash;&nbsp;erelbi page</title><link rel="stylesheet" href="/css/core.min.ee3f1218fc11b89cd1e2b38a679ee8aa5369551b2543d8261ba1ccbd4e11bdd2d377383f1f6b9c668d8d3ac946339a62.css" integrity="sha384-7j8SGPwRuJzR4rOKZ57oqlNpVRslQ9gmG6HMvU4RvdLTdzg/H2ucZo2NOslGM5pi"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">erelbi page</span></a></span>
+        <span class="header right-side"></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">AIS_VERİLERİ_İLE_GEMİ_HAREKETLERİNİN_ANALİZİ</h1><p class="article date">2021-05-16</p></section><article class="article markdown-body"><h2 id="ais-verilerini-veri-madenciliği-kullanilarak-gemi-tiplerinin-manevra-kabiliyetlerine-etkisinin-araştirilmasi">AIS VERİLERİNİ VERİ MADENCİLİĞİ KULLANILARAK GEMİ TİPLERİNİN MANEVRA KABİLİYETLERİNE ETKİSİNİN ARAŞTIRILMASI</h2>
 <pre><code>ÖZETÇE
 </code></pre><pre><code>Gemiler Uluslararası ticaretin önemli bir aracıdır. Ticaretin devamlılığı sağlanması için gemi trafiğinin denetlemesi
 ve kararlı hale getirilmesi gereklidir. Gelişen teknoloji ile gemi trafikleri radar ve ais ile kolayca izlenebilmektedir.
@@ -336,7 +196,8 @@ kullanılmıştır. Yapılan işlemlerini kayıt altına alabilmek için çeşit
 sağlayan açık kaynak kodlu bir program olan Jupyter Notebook, kullanılmıştır. Şekil-1 de ais bilgilerinin
 işlenmemiş hali görülmektedir.</p>
 <p>Şekil 1 Ham Veri
-<img src="/images/AIS/sekil1.png" alt=""></p>
+<img  src="/images/AIS/sekil1.png"
+        alt/></p>
 <h4 id="512-ham-veri-seçimi">5.1.2. <strong>Ham Veri Seçimi</strong></h4>
 <p>Gemiler öncelikle şekil-2 de örnek (tanker gemisi) gösterimi yapıldığı üzere gemi tiplerine göre sıralandırılmıştır,
 ardından şekil-3 de gösterildiği üzere MMSI ile tekrar sıralanırmıştır. Bu sayede gemi tiplerine göre gemi mevcut
@@ -348,7 +209,8 @@ verilerine ulaşılır. Gemilerin tipleri ve hareket durumlarına göre filtrele
 edilebilmesi ve karşılaştırılması için başlangıç noktaları filtrelenmektedir. Şekil-3 de kanal girişini veri setinden çekmek
 için yazılan python sınıfı görülmektedir.</p>
 <p>Şekil 2 Tanker Tipi Gemi Kayıtları
-<img src="/images/AIS/sekil2.png" alt=""></p>
+<img  src="/images/AIS/sekil2.png"
+        alt/></p>
 <h4 id="514-eksik-değer-enterpolasyonu">5.1.4. <strong>Eksik Değer Enterpolasyonu</strong></h4>
 <p>AIS veri dosyamızda veri eksikliklerine neden olan süreksizlik, öğrenme algoritmalarının performansını ve veri tabanının
 veri madenciliği kalitesini etkileyebilir. Ayrıca ham veriler, hatalı hız verileri de içerir. Şekil-4 de veri setindeki boş veya
@@ -363,9 +225,11 @@ kullanılır. Bunun arkasındaki sebep, kategorik değişkenler için ortalama v
 kategorik değişkenlerin nicel özelliklerden ziyade nitel özellikleri vardır. Bu nedenle, merkezi eğilimi hesaba katmak
 için, Modu en sık ortaya çıkan değer olduğu için kullanırız.</p>
 <p>Şekil 3 Python Kanal Sınıfı
-<img src="/images/AIS/sekil3.png" alt=""></p>
+<img  src="/images/AIS/sekil3.png"
+        alt/></p>
 <p>Şekil 4 Kayıp Oranı
-<img src="/images/AIS/sekil4.png" alt=""></p>
+<img  src="/images/AIS/sekil4.png"
+        alt/></p>
 <h4 id="7-deneysel-çalişma">7. DENEYSEL ÇALIŞMA</h4>
 <p>Kapsam kısmında bahsettiğimiz verileri pandas kütüphanesi yardımı ile önce gürültülü ve işlemimize olacak tanımsız
 değerlerden arındırdık. Veri setimizi sadece tanker ve kargo gemileri olacak şekilde ayrıştırdık. Ayrıştırdığımız bu veri
@@ -376,21 +240,28 @@ benzerliklerine göre ayrıştırdık ve aynı rota iz düşümü olan gemileri 
 benzer olan tanker tipi gemiler özellikleri şeklin üst tarafında olacak şekilde; şekil- 5 , şekil- 6 , şekil- 7 , şekil- 8 , olarak
 tanımlanmıştır.</p>
 <p>Şekil 5 M/T Gaschem Hunte Gemisi
-<img src="/images/AIS/sekil5.png" alt=""></p>
+<img  src="/images/AIS/sekil5.png"
+        alt/></p>
 <p><em>Şekil</em> 6 Cape Esmeralda Gemisi</p>
-<p><img src="/images/AIS/sekil6.png" alt=""></p>
+<p><img  src="/images/AIS/sekil6.png"
+        alt/></p>
 <p>Şekil 7 M/T Stolt Quetzal Gemisi
-<img src="/images/AIS/sekil7.png" alt=""></p>
+<img  src="/images/AIS/sekil7.png"
+        alt/></p>
 <p>Rotaları benzer olan kargo tipi gemiler özellikleri şeklin üst tarafında olacak şekilde; şekil- 5 , şekil- 6 , şekil- 7 , şekil- 8 ,
 olarak tanımlanmıştır.</p>
 <p>Şekil 8 M/T JBU SAPPHIRE Gemisi
-<img src="/images/AIS/sekil8.png" alt=""></p>
+<img  src="/images/AIS/sekil8.png"
+        alt/></p>
 <p>Şekil 9 M/V Imperator Gemisi
-<img src="/images/AIS/sekil9.png" alt=""></p>
+<img  src="/images/AIS/sekil9.png"
+        alt/></p>
 <p><em>Şekil</em> 10 M/V Industrial Cape Gemisi
-<img src="/images/AIS/sekil10.png" alt="">
+<img  src="/images/AIS/sekil10.png"
+        alt/>
 Şekil 11 M/V BBC URSA Gemisi
-<img src="/images/AIS/sekil11.png" alt=""></p>
+<img  src="/images/AIS/sekil11.png"
+        alt/></p>
 <h3 id="71-rota-metodu">7.1. Rota Metodu</h3>
 <p>Aşağıdaki şekilde görüldüğü gibi tüm kargo gemileri “data_tanker_name” kargo isimleri ile ayrıştırılarak değişkenlere
 atanacaktır. Bu değişken ship değişkeninin üzerine yazıldıktan sonra her bir geminin gemi ismi, draft bilgisi, gemi
@@ -414,17 +285,21 @@ metre arasında olan ve üzerinde yol bulunan tanker gemilerinin rota iz düşü
 <p>Mevcut veri setimizden rota iz düşümleri uyuşmayan gemiler veri setinden silinmiştir. Şekil- 13 de örnek olarak kargo
 gemileri veri setinden silinmiştir.</p>
 <p>Şekil 12 M/V SJARD Gemisi</p>
-<p><img src="/images/AIS/sekil12.png" alt=""></p>
+<p><img  src="/images/AIS/sekil12.png"
+        alt/></p>
 <p>Şekil 13 Silinen Kargo Gemiler
-<img src="/images/AIS/sekil13.png" alt=""></p>
+<img  src="/images/AIS/sekil13.png"
+        alt/></p>
 <p>Şekil-14 de silinen tanker gemileri gösterilmektedir.
-<img src="/images/AIS/sekil14.png" alt=""></p>
+<img  src="/images/AIS/sekil14.png"
+        alt/></p>
 <h3 id="73-verilerin-birleştirilmesi">7.3. <strong>Verilerin Birleştirilmesi</strong></h3>
 <p>Oluşturduğumuz ve temizlediğimiz verileri tek bir veri setinin içerisinde birleştirerek eğitim ve test verasetleri oluşturulur.
 Bu veri setleri ile mevcut algoritmaların doğruluk oranları hesaplanır. Mevcut doğruluk oranı en yüksek karar ağacı
 sınıflandırması sonucu çıkmıştır. Şekil-15 de test sonucunu görmektesiniz.</p>
 <p>Şekil 15 Algoritma Test Sonuçları
-<img src="/images/AIS/sekil15.png" alt=""></p>
+<img  src="/images/AIS/sekil15.png"
+        alt/></p>
 <p>Şekilde görüldüğü üzere karar ağacı sınıflandırması bire en yakın değeri almaktadır. Veri setinde LAT,LONG,SOG ve
 Heading değerlerinden yararlanılarak bir karar ağacı oluşturulması sonucuna varılmıştır.</p>
 <h4 id="8-sonuçlar">8. SONUÇLAR</h4>
@@ -433,7 +308,8 @@ kullanılan bir algoritmalar koleksiyonudur. Farklı yapı ve tiplerdeki gemiler
 karakteristik özelliklerin karar ağacında yorumlanması için birleştirdiğimiz veri setini daha önce oluşturduğumuz eğitim
 veri setini kullanarak sınıflandırdık. Aşağıdaki şekilde karar ağacı fonksiyonunu görmektesiniz.</p>
 <p>Şekil 16 Karar Ağacı Met odu
-<img src="/images/AIS/sekil16.png" alt=""></p>
+<img  src="/images/AIS/sekil16.png"
+        alt/></p>
 <p>Çıkan sınıflandırmada oluşan ağacın budanarak ayrılan kollardan temizlenmesi gerekmektedir. Ağaç budama
 karmaşıklığı çıkan sonuçta çok fazladır. Optimum ağaç yapısı oluşturulmaya çalışılırken birden çok zor yapıda ve büyük
 ağaçlar oluşabilmektedir. Ağaç eğer bir tek veri kaydı kalana kadar büyütülürse, bu durum da birçok soru ve dal
@@ -442,7 +318,8 @@ olabilmektedir.
 Maalesef karar ağacını oluşturduktan sonrada gemi tiplerinin manevraya etkisini etkileyecek somut verilere ulaşamadım.
 Şekil- 17 dide karar ağacı sınıflandırmasını görmektesiniz.</p>
 <p>Şekil 17 Karar Ağacı Sınıflandırması Şeması
-<img src="/images/AIS/sekil17.png" alt=""></p>
+<img  src="/images/AIS/sekil17.png"
+        alt/></p>
 <h4 id="9-kaynakça">9. KAYNAKÇA</h4>
 <p>[1] FP-GROWTH ALGORİTMASI- WEKA UYGULAMASI, Öğr. Gör. Serpil SEVİMLİ DENİZ, Van</p>
 <p>Yüzüncü Yıl Üniversitesi</p>
@@ -463,27 +340,17 @@ Institutionen för datavetenskap, 2002.</p>
 Alsagheer, 2017</p>
 <hr>
 <h1 id="yapılan-çalışmanın-aşama-videoları">Yapılan Çalışmanın Aşama Videoları</h1>
-<p><a href="https://www.youtube.com/watch?v=-Z9PSsjEkO0"><img src="https://img.youtube.com/vi/-Z9PSsjEkO0/0.jpg" alt="Video"></a></p>
+<p><a href="https://www.youtube.com/watch?v=-Z9PSsjEkO0"target="_blank" rel="noopener noreferrer"><img  src="https://img.youtube.com/vi/-Z9PSsjEkO0/0.jpg"
+        alt="Video"/></a>
+</p>
 <hr>
+</article><section class="article labels"><a class="tag" href=/tags/denizcilik/>Denizcilik</a><a class="tag" href=/tags/ais/>AIS</a><a class="tag" href=/tags/veri-madencili%C4%9Fi/>Veri Madenciliği</a></section>
 </div>
-        <div class="post-footer">
-            <div class="info">
-                
-                <span class="separator"><a class="tag" href="/tags/denizcilik/">Denizcilik</a><a class="tag" href="/tags/ais/">AIS</a><a class="tag" href="/tags/veri-madencili%C4%9Fi/">Veri Madenciliği</a></span>
-            </div>
-        </div>
-
-        
-    </div>
-
-
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript"
-        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
-        integrity="sha256-g8sd1f6o1C2H0eYBoH&#43;qcwia0O&#43;cz&#43;Xa9gQSievMTkY="
-        crossorigin="anonymous"></script></body>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/linux-uuid/"><span class="iconfont icon-article"></span>Linux Uuid</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">erelbi page</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p></div>
+</section></body>
 
 </html>
