@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on the website title shown on the tab</title>
+    <link>https://erelbi.github.io/tags/</link>
+    <description>Recent content in Tags on the website title shown on the tab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Yuanyuan GE 2020</copyright>
+    <lastBuildDate>Sun, 16 May 2021 15:57:06 +0300</lastBuildDate><atom:link href="https://erelbi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AIS</title>
+      <link>https://erelbi.github.io/tags/ais/</link>
+      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/tags/ais/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Denizcilik</title>
+      <link>https://erelbi.github.io/tags/denizcilik/</link>
+      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/tags/denizcilik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Veri Madenciliği</title>
+      <link>https://erelbi.github.io/tags/veri-madencili%C4%9Fi/</link>
+      <pubDate>Sun, 16 May 2021 15:57:06 +0300</pubDate>
+      
+      <guid>https://erelbi.github.io/tags/veri-madencili%C4%9Fi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
