@@ -1,12 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>http://erelbi.github.io/tags/ais/</loc><lastmod>2021-05-16T15:57:06+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</loc><lastmod>2021-05-16T15:57:06+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/tags/denizcilik/</loc><lastmod>2021-05-16T15:57:06+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/tags/</loc><lastmod>2021-05-16T15:57:06+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/tags/veri-madencili%C4%9Fi/</loc><lastmod>2021-05-16T15:57:06+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/posts/</loc><lastmod>2021-05-16T15:56:22+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/</loc><lastmod>2021-05-16T15:40:50+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/about/</loc><lastmod>2021-05-16T15:40:14+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/posts/linux-uuid/</loc><lastmod>2021-05-16T15:39:54+03:00</lastmod></url><url>
-    <loc>http://erelbi.github.io/categories/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://erelbi.github.io/tags/ais/</loc>
+    <lastmod>2021-05-16T15:57:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/posts/ais_verileri_ile_gemi_hareketlerinin_analizi/</loc>
+    <lastmod>2021-05-16T15:57:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/tags/denizcilik/</loc>
+    <lastmod>2021-05-16T15:57:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/tags/</loc>
+    <lastmod>2021-05-16T15:57:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/tags/veri-madencili%C4%9Fi/</loc>
+    <lastmod>2021-05-16T15:57:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/posts/</loc>
+    <lastmod>2021-05-16T15:56:22+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/</loc>
+    <lastmod>2021-05-16T15:40:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/about/</loc>
+    <lastmod>2021-05-16T15:40:14+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/posts/linux-uuid/</loc>
+    <lastmod>2021-05-16T15:39:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://erelbi.github.io/categories/</loc>
+  </url>
+  
+</urlset>

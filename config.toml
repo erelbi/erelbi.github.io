@@ -1,7 +1,7 @@
 baseURL = "http://erelbi.github.io/"
 languageCode = "tr-Tr"
 title = "erelbi page"
-theme = "hugo-notepadium"
+theme = "hugo-theme-casper"
 publishDir = "docs"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
