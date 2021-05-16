@@ -1,50 +1,55 @@
-baseURL = "http://erelbi.github.io/"
-languageCode = "tr-Tr"
-title = "erelbi page"
-theme = "hugo-theme-casper"
-publishDir = "docs"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+baseurl = "https://erelbi.github.io/"
+languageCode = "en-us"
+title = "erelbi"
+theme = "hyde-hyde"
+paginate = 2
+Copyright = "© erelbi 2022"
+canonifyurls = true
+
+googleAnalytics = "G-9QLQCVZ25M"
+enableRobotsTXT = true
 
 [params]
-title = "Ergün Elvan Bİlsel"
-author = "erelbi"
-description = "Linux Sistem Yöneticisi"
-profilePicture = "images/profile.jpg"
+description = "linux system administrator"
+authorlocation = "authorlocation"
+mainSections = ["posts"]
+authorimage = "images/profile.jpg"
+highlightjs = true
+highlightjsstyle = "github"
+    
+[params.social]
+	linkedin = "erelbi"
+	medium = "bilselergun"
+	github = "erelbi"
+    
 
+hideHUGOSupport = false
+[[menu.main]]
+name = "About"
+weight = 0
+identifier = "about" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/about"
+[[menu.main]]  # here are the buttons on the menu
+name = "Home" # Button will display as "Home"
+weight = 100 # the weight decides the position of the button (higher or lower)
+identifier = "home"
+pre = "<br />"
+url = "/"
+[[menu.main]]
+name = "Contact"
+weight = 0
+identifier = "contact" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/contact"
+[[menu.main]]
+name = "Blog"
+identifier = "blog" # this page will refer to a markdown file named "blog" in the content folder
+pre = "<br />"
+url = "/post"
+weight = 40
 
-[[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://linkedin.com/in/erelbi"
-
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/erelbi"
-
-
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:bilselergun@gmail.com"
-
-[menu]
-
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
-
-  [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
